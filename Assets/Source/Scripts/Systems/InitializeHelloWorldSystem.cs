@@ -1,13 +1,14 @@
 ﻿using System;
 using Entitas;
 
-public class HelloWorldSystem : IInitializeSystem
+//Inicializador. la loógica de Logear el debug es en DebugMessageSystem.
+public class InitializeHelloWorldSystem : IInitializeSystem
 {
     // Siempre es cómodo tener una referencia al contexto
     // si interactuaremos sobre él.
     readonly GameContext _context;
 
-    public HelloWorldSystem(Contexts context)
+    public InitializeHelloWorldSystem(Contexts context)
     {
         _context = context.game;
     }
