@@ -18,6 +18,7 @@ public class LogMouseClickSystem : IExecuteSystem {
             _context.CreateEntity().AddDebugMessage("Left clicked!");
         }
 
+
         if(Input.GetMouseButtonDown(1))
         {
             _context.CreateEntity().AddDebugMessage("Right clicked!");
